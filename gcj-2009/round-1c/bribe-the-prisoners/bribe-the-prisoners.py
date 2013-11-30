@@ -27,7 +27,6 @@ num_cases = int(sys.stdin.readline())
 for case in range(1, num_cases + 1):
   P, Q = map(int, sys.stdin.readline().split())
   cells = list(map(int, sys.stdin.readline().split()))
-  solution = solver(cells, (1, P))
-  print("Case #" + str(case) + ":", solution) 
+  print("Case #" + str(case) + ":", solver(cells, (1, P)))
   mem_solutions = {}
 
